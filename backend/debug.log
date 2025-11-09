@@ -1,0 +1,11 @@
+WARNING 2025-11-09 12:07:04,563 log 41 281472962600992 Method Not Allowed: /api/fxprediction/result/
+WARNING 2025-11-09 12:08:15,340 log 42 281473388867616 Not Found: /api/fxprediction/result/
+WARNING 2025-11-09 12:08:25,380 log 41 281473388867616 Not Found: /api/fxprediction/result/
+WARNING 2025-11-09 12:13:37,156 log 41 281473595387936 Not Found: /api/fxprediction/result/
+WARNING 2025-11-09 12:16:49,661 log 41 281473821376544 Not Found: /api/fxprediction/result/
+WARNING 2025-11-09 12:16:54,301 log 40 281473821376544 Not Found: /api/fxprediction/result/
+WARNING 2025-11-09 12:17:58,195 log 40 281473821376544 Not Found: /api/fxprediction/result/
+WARNING 2025-11-09 12:19:01,425 log 40 281473821376544 Not Found: /api/fxprediction/result/
+WARNING 2025-11-09 12:32:02,060 log 42 281472873807904 Not Found: /api/fxprediction/result/
+WARNING 2025-11-09 12:36:31,590 log 41 281473470738464 Not Found: /api/fxprediction/result/
+INFO 2025-11-09 12:48:30,071 cache 42 281471208190336 Failed to create TzCache, reason: Error creating TzCache folder: '/root/.cache/py-yfinance' reason: [Errno 17] File exists: '/root/.cache/py-yfinance'. TzCache will not be used. Tip: You can direct cache to use a different location with 'set_tz_cache_location(mylocation)'
