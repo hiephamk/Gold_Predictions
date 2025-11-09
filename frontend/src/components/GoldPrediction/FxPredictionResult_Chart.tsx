@@ -26,7 +26,8 @@ const FxPredictionResult_Chart: React.FC<FxActualPredictedDataProps> = ({ interv
     dateStr.includes("T") ? dateStr.trim() : dateStr.trim().replace(" ", "T");
   
   const fetch_predicted_prices = async () => {
-    const url = `http://localhost:8000/api/fxprediction/predicted-prices-${interval}/`;
+    // const url = `http://localhost:8000/api/fxprediction/predicted-prices-${interval}/`;
+    const url = `${import.meta.env.VITE_PREDICTION_RESULT_URL}-${interval}/`
     
     try {
       const { data } = await axios.get(url);

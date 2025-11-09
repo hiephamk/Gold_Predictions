@@ -53,7 +53,7 @@ const handlePredict = async () => {
   setError(null);
   setPredictions(null);
 
-  const url = 'http://localhost:8000/api/fxprediction/result/';
+  const url = import.meta.env.VITE_GOLD_PREDICTION_RESULT_URL;
 
   try {
     const response = await axios.post<any>(url, { interval:interval}, {

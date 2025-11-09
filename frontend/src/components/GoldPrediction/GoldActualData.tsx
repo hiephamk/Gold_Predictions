@@ -27,8 +27,10 @@ const GoldActualData: React.FC<Props> = ({ interval }) => {
 
   const fetchActual = async () => {
     try {
+      const url = import.meta.env.VITE_GOLD_ACTUAL_URL
       const { data } = await axios.post(
-        'http://localhost:8000/api/fxprediction/actual-prices/',
+        url,
+        // 'http://localhost:8000/api/fxprediction/actual-prices/',
         { interval },
         { headers: { 'Content-Type': 'application/json' } }
       );

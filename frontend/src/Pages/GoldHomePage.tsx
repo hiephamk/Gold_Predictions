@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import FxPredictionResult from '../components/GoldPrediction/FxPredictionResult'
+import FxPredictionResult from '../components/GoldPrediction2/FxPredictionResult'
 import { Box, Button, Center, Container, Heading, HStack, VStack } from '@chakra-ui/react'
-import FxActualPredictedData from '../components/GoldPrediction/FxActualPredictedData';
-import GoldActualData from '../components/GoldPrediction/GoldActualData';
+import FxActualPredictedData from '../components/GoldPrediction2/FxActualPredictedData';
+import GoldActualData from '../components/GoldPrediction2/GoldActualData';
 
 const getInitialInterval = () => {
   return (

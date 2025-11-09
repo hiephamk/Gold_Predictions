@@ -44,8 +44,9 @@ const GoldPredictedTrend: React.FC<FxActualPredictedDataProps> = ({interval,}) =
 
   const fetch_actual_price = async () => {
     try {
+      const url = import.meta.env.VITE_GOLD_ACTUAL_URL
       const { data } = await axios.post(
-        "http://localhost:8000/api/fxprediction/actual-prices/",
+        url,
         { interval, },
         { headers: { "Content-Type": "application/json" } }
       );
@@ -79,7 +80,7 @@ const GoldPredictedTrend: React.FC<FxActualPredictedDataProps> = ({interval,}) =
 
   /* -------------------------- API: Predicted -------------------------- */
   const fetch_predicted_prices = async () => {
-    const url = `http://127.0.0.1:8000/api/fxprediction/predicted-prices-${interval}/`;
+    const url = `${import.meta.env.VITE_PREDICTED_PRICE_URL}-${interval}/`
     try {
       const { data } = await axios.get(url);
 
